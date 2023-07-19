@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="todo.css" />
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>TODO</header>
+      <div class="inputField">
+        <input
+          type="text"
+          id="addValue"
+          placeholder="할 일 추가하기"
+          autofocus
+        />
+        <button type="button" id="btn" onclick="addTodo()">
+          <i class="xi-plus xi-2x"></i>
+        </button>
+      </div>
+      <div>
+        <ul id="addTodo" class="Todolist draggable">
+          <li>
+            <div id="result"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button type="button" id="allClear" onclick="allClearlist()">
+          모두 삭제
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
