@@ -36,6 +36,13 @@ function deleteList(e) {
   removeOne.remove();
 }
 
+// 엔터 키 감지 이벤트
+addValue.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addTodo(); // 엔터 키가 눌리면 addTodo() 함수를 호출하여 할 일 목록 추가
+  }
+});
+
 // 모두 삭제하기
 function allClearlist(e) {
   if (confirm("정말 삭제하시겠습니까?") == true) {
